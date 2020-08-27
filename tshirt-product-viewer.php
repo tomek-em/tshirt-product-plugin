@@ -160,11 +160,3 @@
     </div>
     <?php
   }
-
-
-  // add values to head
-  function tshirt_display_header_scripts() {
-    $tshirt_scripts = get_option('tshirt_title','none');
-    print $tshirt_scripts;
-  }
-  // add_action('wp_head','tshirt_display_header_scripts');
