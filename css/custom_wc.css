@@ -1,0 +1,471 @@
+
+/* Custom WooCommerce */
+
+.related.products {
+    display: none;
+}
+
+.woocommerce-billing-fields {
+    min-width: 90%;
+}
+
+.woocommerce-input-wrapper {
+    min-width: 200px;
+}
+
+.woocommerce-MyAccount-navigation {
+    display: none;
+}
+
+/* Fixing woocommerce - bootstrap conflict */
+.woocommerce-billing-fields .form-row, .woocommerce-shipping-fields .form-row,.woocommerce form .form-row {
+    display: block;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    max-width: unset;
+}
+
+.woocommerce span.onsale {
+    z-index: 0;
+}
+
+.orderby {
+    margin: 0 1rem;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    background: #ccc;
+}
+
+.entry-title {
+    font-size: 2rem;
+}
+
+.entry-title, .woocommerce-result-count {
+    color: #111;
+}
+
+.orderby {
+    width: 200px;
+    height:32px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* prduct title */
+.product-template-default h2 {
+    font-size: 1.8rem;
+}
+
+.woocommerce ul.products li.product {
+    background: #f4f4f4;
+    border-radius: 0;
+    min-width: 26%;
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    .woocommerce ul.products li.product {
+        min-width: 24%;
+    }
+
+}
+
+.woocommerce ul.products li.product:hover {
+    background: #fff;
+}
+
+
+.woocommerce ul.products li.product .onsale {
+    margin: 0;
+}
+
+.woocommerce-loop-product__title {
+    color: #111;
+}
+
+.woocommerce ul.products li.product a h2, .product-template-default h2 {
+
+}
+
+.woocommerce ul.products li.product  {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.woocommerce ul.products li.product .price {
+    color: #444;
+}
+
+.woocommerce a.button {
+    background: #D64161;
+    color: #eee;
+}
+
+.woocommerce a.button:hover {
+    background: #E65172;
+    color: #eee;
+}
+
+.woocommerce span.onsale {
+    min-height: 4em;
+    min-width: 4em;
+    padding: 0.3em;
+}
+
+
+.woocommerce ul.products[class*="columns-"] li.product, .woocommerce-page ul.products[class*="columns-"] li.product {
+    max-width: 240px;
+}
+
+.wc-tabs {
+    display: none;
+}
+
+.woocommerce span.onsale {
+    background: #ff3040;
+}
+
+.single-product .onsale {
+    display: none;
+}
+
+.product_type_simple {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+.summary {
+  margin-left: 60px;
+  width: 300px;
+}
+
+.woocommerce-page div.product div.summary {
+  width: 32%;
+  float: right;
+  margin-left: 40px;
+  position: relative;
+  min-height: 80px;
+  margin-bottom: 0;
+}
+
+/*  Tshirt product designer */
+.woocommerce-page div.product-type-woodesigner div.summary {
+  float: left;
+  margin: 32px 16px;
+}
+
+.woocommerce-page div.product-type-woodesigner div.summary  .product_meta {
+  margin-top: 20px;
+}
+
+@media (max-width: 1400px) {
+
+
+
+  .woocommerce-page div.product div.summary {
+    float: left;
+    min-height: 40px;
+  }
+
+}
+
+
+
+.wc-tabs-wrapper {
+  /* width: 100%; */
+}
+
+
+
+.woocommerce div.product form.cart div.quantity {
+    float: none;
+}
+
+input, textarea {
+    margin-bottom: 1em;
+}
+
+.woocommerce div.product form.cart div.quantity {
+
+}
+
+.woocommerce div.product form.cart {
+    margin-bottom: 1em;
+}
+
+#tab-description h2 {
+    display: none;
+}
+
+.woocommerce div.product p.price {
+    color: #222;
+    font-size: 1.5rem;
+}
+
+del .woocommerce-Price-amount {
+    font-size: 1rem;
+}
+
+.woocommerce-Price-amount {
+/*    float: left;*/
+}
+
+.summary .price {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.summary .price span {
+    color: #222;
+    text-decoration: none;
+    border: 0;
+}
+
+.summary .price ins {
+  text-decoration: none;
+}
+
+
+
+
+/* QUANTITY */
+
+/* Hide arrows */
+input::-webkit-outer-spin-button,
+.woocommerce div.product input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden  */
+}
+
+
+.woocommerce div.product form.cart input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+/* container for quantity and button */
+.woocommerce form.cart {
+    margin: 20px 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.single-product div.product form.cart .quantity {
+/*    float: none;*/
+/*    display: inline-block;*/
+}
+
+.woocommerce div.product form.cart div.quantity {
+    margin: 0;
+}
+
+.woocommerce .quantity .qty, .minus, .plus {
+    width: 40px;
+    margin-left: 0;
+}
+
+.minus, .plus {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #343448;
+    background: #343448;
+    color: #eee;
+    font-size: 1.4rem;
+}
+
+.minus:hover, .plus:hover {
+    border-color: #3d3d4d;
+    background: #3d3d4d;
+    color: #eee;
+}
+
+.plus {
+    margin-right: 10px;
+}
+
+.woocommerce div.product form.cart div.quantity input[type=number] {
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 0;
+    border-width: 0;
+    height: 3rem;
+    color: #435E55;
+    font-size: 1.2rem;
+    margin-bottom:0;
+}
+
+.woocommerce button.button.alt {
+    border-radius: 3px;
+    background: #D64161;
+    padding: 0 30px 0 30px;
+    text-align: center;
+    height: 3rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1400px) {
+    .woocommerce button.button.alt {
+    }
+
+}
+
+.woocommerce #respond input#submit.alt:hover .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background: #E65171;
+}
+
+@media (max-width: 900px) {
+    .plus, .minus {
+        min-width: 30px;
+    }
+
+    .woocommerce div.product form.cart .button {
+        padding: 2px 10px;
+        min-width: 160px;
+    }
+
+
+}
+
+.woocommerce .cart button.button.alt {
+/*
+    position: absolute;
+    bottom: 0;
+*/
+}
+
+
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+  z-index: 0;
+}
+
+
+/* CURRENCY */
+#alg_currency_selector select {
+    height: 32px;
+    line-height: 16px;
+    font-size: 12px;
+    margin-top: 10px;
+    min-width: 120px;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+/* CARD */
+
+.woocommerce-cart-form a {
+    color: #222;
+    text-transform: uppercase;
+}
+
+.woocommerce a.button.alt {
+    background: #ff4051;
+}
+
+.woocommerce a.button.alt:hover {
+    background: #ff2031;
+}
+
+#place_order {
+    margin-top: 40px;
+}
+
+/* ------------------------------------------- */
+
+@media (max-width: 1300px) {
+
+}
+
+@media (max-width: 900px) {
+    .woocommerce ul.products[class*="columns-"] li.product, .woocommerce-page ul.products[class*="columns-"] li.product {
+        width:90%;
+        max-width: 300px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+    }
+
+    .woocommerce-page div.product div.summary {
+        width: 80%;
+        margin-left: 0;
+        min-height: 120px;
+    }
+
+    input, textarea {
+        position: static;
+/*        margin-top: 20px;*/
+    }
+
+    .woocommerce div.product form.cart div.quantity {
+        position: static;
+    }
+
+}
+
+
+
+
+/*  Customize tshirt product viewer */
+
+#overview {
+  width: 300px;
+}
+
+#designer_overview_content {
+  line-height: 2;
+}
+
+.woo_designer_quantity {
+  height: 32px;
+  padding: 6px;
+}
+
+#woo_designer_add_to_cart_form .btn {
+  margin: auto 0;
+  background:
+}
+
+#options {
+  z-index: 0;
+}
+
+#designer_overview_content {
+  display: none;
+}
+
+.shop_table dt.variation-BasePrice{
+  display: none;
+}
+
+.shop_table dd.variation-BasePrice{
+  display: none;
+}

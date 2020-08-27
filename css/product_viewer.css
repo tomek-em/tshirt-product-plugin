@@ -1,0 +1,261 @@
+
+
+.woocommerce .content-area .site-main {
+  max-width: 94%;
+}
+
+.type-product {
+  display: block;
+}
+
+
+.canvas_cont {
+  width: 60%;
+  max-width: 700px;
+  min-width: 560px;
+  float: left;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-right: 16px;
+}
+
+.canvas {
+  border: none;
+}
+
+.extra_title {
+  display: block;
+  margin: 6px 0;
+  font-weight: normal;
+}
+
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+  float: left;
+  width: auto;
+}
+
+
+
+
+@media (max-width: 1288px) {
+
+  .type-product {
+    margin-top: 24px;
+  }
+
+  .canvas_cont {
+    width: 100%;
+    min-width: 300px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .canvas_cont {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* panel */
+
+.btn_panel {
+  width: 100%;
+  min-height: 80px;
+  background: #444455;
+  opacity: 0.9;
+  border-radius: 5px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 8px;
+}
+
+.input_cont label {
+  font-size: 17px;
+  margin: auto 6px;
+}
+
+.text_input {
+  width: 180px;
+  height: 36px;
+  margin: 4px 6px;
+}
+
+.canvas_cont .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  min-width: 100px;
+  background: #D64161;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+.canvas_cont .btn:hover {
+  background: #E95676;
+  color: #fff;
+}
+
+.select {
+  min-width: 80px;
+  margin: 4px 12px;
+}
+
+#select_txColor {
+  margin-left: 0;
+}
+
+
+
+
+/*  Hide extra product text field */
+.thwepo-extra-options {
+  display: none;
+}
+
+
+
+
+/* Page content */
+
+
+section {
+    max-width:1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-section {
+    padding: 2rem 1em;
+}
+
+.main-section p {
+    font-size: 1.8rem;
+    color: #212529
+}
+
+#contact {
+    padding-top: 3rem;
+}
+.boxes {
+    margin-top:2rem;
+    padding: 2rem 6rem;
+    min-width: 100%;
+    background: linear-gradient(rgba(33,37,41, 0.3), rgba(33,37,41,0.3));
+    background-size: cover;
+}
+
+
+
+.product-template-default h2{
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+
+
+#panel {
+    width: 100%;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    background: #eee;
+    padding: 5px 10px;
+    float: left;
+    color: #435E55;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+#file {
+    margin-bottom: 8px;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 12px;
+    color: #435E55;
+}
+
+.custom-panel {
+    float: left;
+    margin: 5px 0;
+    margin-right: 20px;
+}
+
+
+
+input[type="radio"]:checked + label::before  {
+    top: 0;
+    width: 100%;
+    height: 2em;
+    background: white;
+}
+
+#panel label {
+    margin-bottom: 0;
+    margin-right: 8px;
+    color: #212528;
+}
+
+#edt-text {
+    margin: 0;
+    margin-bottom: 5px;
+    border: 1px solid #212528;
+    border-radius: 1px;
+    background: #bbbaba;
+    padding: 5px 10px;
+    line-height: 0;
+    font-size: 16px;
+    color: #435E55;
+}
+
+#sub-btn {
+    border: 1px solid #546478;
+    background: #546478;
+    color: #212528;
+    border-radius: 1px;
+    display: inline-block;
+    padding: 5px 30px;
+    margin-left: 5px;
+    color: #eee;
+}
+
+#sub-btn:hover{
+    background: #545478;
+    border: 1px solid #545478;
+    color: #eee;
+    cursor:  pointer;
+}
+
+
+
+/* Woocommerce addition variables ---- */
+
+.wccpf-fields-container {
+    display: none;
+}
